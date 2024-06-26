@@ -1,5 +1,7 @@
 body {
   background-color: aliceblue;
+  margin: 0px;
+  padding: 0px;
 }
 img {
   margin: 10px;
@@ -7,8 +9,12 @@ img {
   width: 100px;
   height: 100px;
 }
+header > h1 {
+  /* 세로방향  */
+  text-align: start;
+}
 header {
-  display: flex;
+  /* display: flex; */
   height: 200px;
 
   /* 가로방향 */
@@ -19,6 +25,7 @@ header {
   align-items: end;
 }
 ul {
+  justify-content: end;
   margin: 10px;
   padding: 20px;
   display: flex;
@@ -37,7 +44,10 @@ a {
   margin: 1px;
   border-radius: 5px;
 }
-
+a:hover {
+  background-color: lightskyblue;
+  color: black;
+}
 article {
   /* 박스의 바깥영역 : margin */
   /* 4개가 각각 '위'에서부터 시계방향으로 돈다  */
@@ -62,6 +72,7 @@ section > div {
 }
 
 footer {
+  align-items: center;
   margin: 0px;
   padding: 20px;
   background-color: black;
@@ -69,10 +80,41 @@ footer {
 }
 /* 미디어쿼리 */
 @media screen and (max-width: 1024px) {
+  a {
+    /* background-color: darkblue; */
+  }
   body {
-    background-color: aliceblue;
+    /* padding: 100px; */
+    justify-content: center;
+    /* width: 600px; */
   }
-  img {
-    border-radius: 50px;
+
+  /* body {
+    padding: 20px;
   }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  header li {
+    margin: 5px 0;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  section img {
+    width: 80px;
+    height: 80px;
+  }
+
+  footer {
+    text-align: center;
+  } */
 }
