@@ -4,4 +4,4 @@
 
 ### References
 
-> [W3School](https://www.w3schools.com/)
+> [w3Schools](https://www.w3schools.com/)
