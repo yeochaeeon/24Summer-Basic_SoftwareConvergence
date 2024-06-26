@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* 태그 selector */
+header {
+  background-color: rgb(255, 255, 255);
+}
+h2 {
+  color: blue;
+}
+/* .으로 시작하면 class를 찾는거  */
+/* class selector */
+.c1 {
+  background-color: rgb(244, 244, 221);
+}
+.c2 {
+  background-color: rgb(239, 216, 216);
+}
+/* id 속성을 찾고싶다면 '#'을사용 */
+/* class 속성과 id 속성이 함께 적용되었을 때에는 id속성이 우선으로 적용된다 */
+
+/* id selector */
+#d1 {
+  background-color: rgb(213, 232, 176);
+}
+/* 부모자식관계 */
+#d1 > h2 {
+  color: green;
+}
+header > ul > li {
+  color: green;
+}
+/* 자손관계 selector */
+header li {
+  color: red;
+  list-style: none;
+  margin: 5px;
+}
+/* 속성 selector */
+img[alt="html"] {
+  width: 100px;
+  height: 100px;
+}
+
+img[alt="css"] {
+  width: 100px;
+  height: 100px;
+}
+/* 가상 class selector */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  padding: 3px;
+  background-color: rgb(48, 145, 112);
+  color: white;
+}
+article {
+  border: 5px dashed red;
+
+  /* 박스의 바깥영역 : margin */
+  /* 4개가 각각 '위'에서부터 시계방향으로 돈다  */
+  margin: 20px;
+
+  /* 박스의 안영역 : padding */
+  /* 2개면 각각 '위아래' , '양옆' */
+  padding: 10px 20px;
+}
+header {
+  display: flex;
+  height: 200px;
+
+  /* 가로방향 */
+  justify-content: space-between;
+
+  padding: 10px;
+
+  /* 세로방향 */
+  align-items: start;
+}
+div,
+ul {
+  border: 2px, solid, green;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+}
+/* 미디어쿼리 */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: darkkhaki;
+  }
+  header {
+    background-color: bisque;
+  }
+}
+img {
+  border-radius: 50px;
+}

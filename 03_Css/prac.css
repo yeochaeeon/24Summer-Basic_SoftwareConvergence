@@ -1,0 +1,78 @@
+body {
+  background-color: aliceblue;
+}
+img {
+  margin: 10px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+header {
+  display: flex;
+  height: 200px;
+
+  /* 가로방향 */
+  /* justify-content: space-between; */
+
+  padding: 10px;
+  /* 세로방향 */
+  align-items: end;
+}
+ul {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+}
+header li {
+  color: white;
+  list-style: none;
+  margin: 1px;
+  /* border-radius: 10px; */
+}
+a {
+  background-color: rgb(60, 146, 231);
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+article {
+  /* 박스의 바깥영역 : margin */
+  /* 4개가 각각 '위'에서부터 시계방향으로 돈다  */
+  margin: 20px;
+
+  /* 박스의 안영역 : padding */
+  /* 2개면 각각 '위아래' , '양옆' */
+  padding: 10px 20px;
+}
+section {
+  margin: 20px 20px 20px 20px;
+  background-color: white;
+  padding: 20px;
+  /* display: flex; */
+}
+section > h2 {
+  margin: 5px;
+}
+section > div {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  margin: 0px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+/* 미디어쿼리 */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: aliceblue;
+  }
+  img {
+    border-radius: 50px;
+  }
+}
