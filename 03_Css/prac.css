@@ -31,6 +31,7 @@ ul {
   margin: 10px;
   padding: 20px;
   display: flex;
+  /* 리스트 방향 가로로 */
 }
 header li {
   color: white;
