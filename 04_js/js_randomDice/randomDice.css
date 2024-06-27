@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  /* 자식 요소들을 양 끝으로 배치  */
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+header > h1 {
+  margin: 20px;
+}
+#w3school {
+  display: flex;
+}
+#w3school > p {
+  margin: 0px 20px 0px 0px;
+}
+#title {
+  border: 1px dotted lightgray;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+#title > h1 {
+  padding: 10px;
+  /* margin: 60px; */
+
+  justify-content: center;
+}
+#dice {
+  border: 1px dotted lightgray;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+img {
+  margin: 30px 0px 0px 0px;
+  width: 200px;
+  height: 200px;
+}
+button {
+  width: 200px;
+  font-size: normal;
+  border-radius: 7px;
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(92, 134, 218);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+button:hover {
+  background-color: darkcyan;
+}
