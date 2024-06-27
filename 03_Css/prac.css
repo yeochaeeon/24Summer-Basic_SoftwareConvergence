@@ -1,7 +1,8 @@
 body {
-  background-color: aliceblue;
+  background-color: rgb(227, 242, 255);
   margin: 0px;
   padding: 0px;
+  justify-content: center;
 }
 img {
   margin: 10px;
@@ -67,8 +68,13 @@ section {
   /* display: flex; */
 }
 section > h2 {
+  /* text-align: center; */
+  /* 텍스트 정렬할때는 justify-content가 아니라 text-align써야함  */
   margin: 5px;
 }
+/* #test {
+  justify-content: center;
+} */
 section > div {
   display: flex;
   align-items: center;
