@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   bt.addEventListener("click", () => {
-    console.log("buttom clicked");
+    console.log("새로운 주사위 굴리기");
     const randomIndex = Math.floor(Math.random() * 6);
     img.src = images[randomIndex];
   });
