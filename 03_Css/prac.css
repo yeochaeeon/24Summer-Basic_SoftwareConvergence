@@ -44,9 +44,9 @@ a {
   background-color: rgb(60, 146, 231);
   text-decoration: none;
   color: white;
-  padding: 5px;
+  padding: 6px;
   margin: 1px;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 a:hover {
   background-color: lightskyblue;
@@ -88,6 +88,8 @@ footer {
   color: white;
 }
 /* 미디어쿼리 */
+/* 커졌을 때 header 를 flex로 준다 .. 1280이상 미디어쿼리 사용
+작아졌을 때는 밑으로 내려오게 ( not flex) */
 @media screen and (max-width: 1024px) {
   a {
     /* background-color: darkblue; */
@@ -127,3 +129,4 @@ footer {
     text-align: center;
   } */
 }
+/*  */
