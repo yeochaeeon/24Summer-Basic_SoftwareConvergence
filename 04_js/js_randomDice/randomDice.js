@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   bt.addEventListener("click", () => {
+    console.log("buttom clicked");
     const randomIndex = Math.floor(Math.random() * 6);
     img.src = images[randomIndex];
   });
