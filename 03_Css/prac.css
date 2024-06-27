@@ -1,7 +1,12 @@
 body {
-  background-color: rgb(227, 242, 255);
   margin: 0px;
   padding: 0px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+#content {
+  background-color: rgb(227, 242, 255);
   justify-content: center;
 }
 img {
@@ -90,43 +95,17 @@ footer {
 /* 미디어쿼리 */
 /* 커졌을 때 header 를 flex로 준다 .. 1280이상 미디어쿼리 사용
 작아졌을 때는 밑으로 내려오게 ( not flex) */
-@media screen and (max-width: 1024px) {
-  a {
-    /* background-color: darkblue; */
-  }
-  body {
-    /* padding: 100px; */
+@media screen and (min-width: 1280px) {
+  #content {
+    /* display: flex; */
     justify-content: center;
-    /* width: 600px; */
+    /* margin-left: 10%; */
+    /* 바디에 flex주면 10%수동으로 안해줘도 됨 */
+    width: 80%;
   }
-
-  /* body {
-    padding: 20px;
-  }
-
   header {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: auto;
   }
-
-  header li {
-    margin: 5px 0;
-  }
-
-  section {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  section img {
-    width: 80px;
-    height: 80px;
-  }
-
-  footer {
-    text-align: center;
-  } */
 }
-/*  */
