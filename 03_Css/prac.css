@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   display: flex;
+  /* ??-디스플레이 플렉스는 한계층 아래의 것들만 flex해주나? */
   justify-items: center;
   justify-content: center;
 }
@@ -100,11 +101,11 @@ footer {
     /* display: flex; */
     justify-content: center;
     /* margin-left: 10%; */
-    /* 바디에 flex주면 10%수동으로 안해줘도 됨 */
+    /* 바디에 flex주면 10% 수동으로 안해줘도 됨 */
     width: 80%;
   }
   header {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
   }
