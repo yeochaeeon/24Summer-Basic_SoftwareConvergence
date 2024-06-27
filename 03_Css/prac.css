@@ -72,8 +72,8 @@ section > div {
   display: flex;
   align-items: center;
 }
-
 footer {
+  font-size: 13px;
   align-items: center;
   margin: 0px;
   padding: 20px;
