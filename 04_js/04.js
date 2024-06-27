@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const bt = document.querySelector("button");
 
   //   msg.innerHTML = "<h1>안녕</h1>";
-  msg.textContent = "<h1>안녕</h1>";
+  //   msg.textContent = "<h1>안녕</h1>";
 
   bt.addEventListener("click", () => {
     if (msg.innerHTML == "안녕") msg.innerHTML = "잘가!";
