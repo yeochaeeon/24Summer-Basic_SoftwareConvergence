@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   display: flex;
-  /* ??-디스플레이 플렉스는 한계층 아래의 것들만 flex해주나? */
+  /* ??-디스플레이 플렉스는 바로 한 계층 아래의 것들만 flex해주나? */
   justify-items: center;
   justify-content: center;
 }
