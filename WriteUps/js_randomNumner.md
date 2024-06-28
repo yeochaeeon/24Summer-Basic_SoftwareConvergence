@@ -23,7 +23,7 @@ document.write(rand3 + "<br>");
 0.6874521023628725
 ```
 
-## 정수 난수 생성 - with`Math.floor()`
+## 정수 난수 생성 - with `Math.floor()`
 
 - `Math.floor()`은 소수점 1번째 자리를 버림하여 정수를 리턴한다.
 - 따라서 `Math.floor(Math.random())`의 결과는 늘 0이다.
