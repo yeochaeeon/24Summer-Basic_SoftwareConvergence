@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const imgCom = document.querySelector("#com");
   const imgUser = document.querySelector("#user");
-  const buttons = document.querySelectorAll("#buttons > button");
+  const buttons = document.querySelectorAll("#buttons  button");
   console.log(buttons);
   for (let bt of buttons) {
     bt.addEventListener("click", () => {
