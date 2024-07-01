@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>단위환산</title>
+    <script src="./unitConverter.js"></script>
+    <link rel="stylesheet" type="text/css" href="./unitConverter.css" />
+  </head>
+  <body>
+    <header>
+      <h1>자바스크립트 기초</h1>
+      <a href="./unitConverter.html">홈</a>
+    </header>
+    <main>
+      <div id="title">
+        <h1>단위환산</h1>
+      </div>
+      <div id="converter">
+        <form>
+          <div id="input">
+            <div id="leftsel">
+              <select id="lsel">
+                <option value="℃" selected>섭씨온도(℃)</option>
+                <option value="℉">화씨온도(℉)</option>
+              </select>
+            </div>
+            <div id="leftnum">
+              <input type="number" id="txt1" value="0" />
+              <label for="txt1" id="label1">℃</label>
+            </div>
+          </div>
+          <div id="output">
+            <div id="rightsel">
+              <select id="rsel">
+                <option value="℃" selected>섭씨온도(℃)</option>
+                <option value="℉">화씨온도(℉)</option>
+              </select>
+            </div>
+            <div id="rightnum">
+              <input type="number" id="txt2" value="0" />
+              <label for="txt2" id="label2">℉</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
