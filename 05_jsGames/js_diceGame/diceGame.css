@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  display: flex;
+  justify-content: center;
+}
 #content {
   display: flex;
   flex-direction: column;
@@ -81,6 +85,11 @@ button:hover {
   margin: 20px;
   border: 1px dotted gray;
   padding: 10px;
+}
+@media screen and (min-width: 1280px) {
+  #content {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 550px) {
   /* 모바일 화면에서 주사위 두개가 세로로 배치되도록 하기  */
