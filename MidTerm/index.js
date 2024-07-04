@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (input.value == "") {
       alert("단어를 입력하세요.");
       input.focus();
+      return;
     }
     //6번 총 횟수 맞춘 횟수
     total = total + 1;
