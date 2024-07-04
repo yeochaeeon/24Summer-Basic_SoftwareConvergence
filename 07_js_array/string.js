@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     //공백 입력시 alert
-    bt1.addEventListener("click", () => {
+    bt2.addEventListener("click", (e) => {
+      e.defaultPrevented();
       if (txt1.value == "") {
         alert("글자를 입력하세요");
         txt1.focus();
@@ -60,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
       txt2.value = sum;
+      console.log(sum);
     });
   });
 });

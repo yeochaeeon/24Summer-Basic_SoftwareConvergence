@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS_updownGame</title>
-    <link rel="stylesheet" type="text/css" href="updown.css" />
+    <link rel="stylesheet" type="text/css" href="./updown.css" />
     <script src="./updown.js"></script>
   </head>
   <body>
@@ -21,10 +21,8 @@
           <h1>업다운게임</h1>
         </div>
         <div id="box">
-          <msg></msg>
-          <div id="msg"></div>
           <div id="imgbox">
-            <img src="./img/start.png" />
+            <img src="./img/what.png" />
           </div>
           <div id="input">
             <form method="get" action="">
@@ -32,10 +30,12 @@
                 <input
                   type="number"
                   name="number"
+                  id="inputnum"
                   placeholder="숫자를 입력하세요."
                 />
               </p>
-              <p><input type="submit" value="제출" /></p>
+              <p><input type="button" id="bt" value="제출" /></p>
+              <!-- <button> </button>이랑 위에거랑 똑같음  -->
             </form>
           </div>
         </div>

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //DOM 요소 가져오기
   const txt1 = document.querySelector("#txt1");
   const btAdds = document.querySelectorAll(".btAdd");
+  console.log(btAdds);
   const btDels = document.querySelectorAll(".btDel");
   const btChanges = document.querySelectorAll(".btChange");
 

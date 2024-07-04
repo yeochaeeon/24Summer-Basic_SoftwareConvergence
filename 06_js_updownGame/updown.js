@@ -1,34 +1,43 @@
-// let x = 20;
-console.log("x1=", x);
-var x = 20;
-console.log("x2=", x);
-
-let arr = [10, 20, 30];
-console.log("**전통적인 반복문**");
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
-
-//for .. in
-console.log("**for in 반복문**");
-for (let i in arr) {
-  console.log(arr[i]);
-}
-
-//forEach
-console.log("**for each 반복문**");
-arr.forEach((item, i) => console.log(`${i}=>${item}`));
-
-//for .. of
-console.log("**for of 반복문**");
-for (let i of arr) {
-  console.log(i);
-}
-
-for (let [i, item] of arr.entries()) {
-  console.log(`${i}=>${item}`);
-}
 document.addEventListener("DOMContentLoaded", () => {
-  const msg = document.querySelector("msg");
-  msg.innerHTML = '<h2 style="color:blue; margin:20px;">메시지영역</h2>';
+  const input = document.querySelector("input[type=number]");
+  const button = document.querySelector("#bt");
+  const img = document.querySelector("img");
+  let flag = true;
+  let nCom = 0;
+
+  const init = () => {
+    img.setAttribute("src", "./img/what.png");
+    input.value = "";
+    input.style.display = "inline";
+    button.value = "제출";
+    flag = true;
+  };
+
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (flag == true) {
+      nCom = Math.floor(Math.random() * 100) + 1;
+      console.log(`nCom == ${nCom}`);
+      flag = false;
+    }
+
+    let nUser = input.value;
+    console.log(`nUser = ${nUser}`);
+
+    if (nCom > nUser) {
+      img.setAttribute("src", "./img/up.png");
+      console.log(`flag == ${flag}`);
+    } else if (nCom < nUser) {
+      img.setAttribute("src", "./img/down.png");
+      console.log(`flag == ${flag}`);
+    } else {
+      img.setAttribute("src", "./img/good.png");
+      input.style.display = "none";
+      button.value = "번호를 다시 생성하세요";
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        init();
+      });
+    }
+  });
 });

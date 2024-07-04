@@ -48,21 +48,26 @@ header h1 {
   align-items: center;
 }
 #imgbox {
-  padding: 85px;
+  padding: 60px;
+}
+img {
+  width: 300px;
 }
 input {
+  font-size: large;
   align-items: center;
-  height: 35px;
+  height: 53px;
 }
-#input input[type="submit"] {
+#bt {
   border-radius: 2px;
-  height: 39px;
-  width: 45px;
+  height: 55px;
+  width: 100%;
   color: white;
   background-color: rgb(94, 64, 125);
   border: none;
+  padding: 10px;
 }
-#input input[type="submit"]:hover {
+#bt:hover {
   background-color: darkcyan;
 }
 
