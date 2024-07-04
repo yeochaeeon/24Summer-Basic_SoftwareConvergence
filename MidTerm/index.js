@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     name.style.display = "inline";
     input.style.display = "none";
     btok.style.display = "none";
-    result.style.display = "none";
+    result.style.display = "flex";
 
     let n = Math.floor(Math.random() * 4);
     img.setAttribute("src", `img/${n + 1}.png`);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     img.style.display = "inline";
     input.style.display = "inline";
     btok.style.display = "inline";
-    result.style.display = "inline";
+    result.style.display = "flex";
     name.style.display = "none";
 
     n = Math.floor(Math.random() * 4);

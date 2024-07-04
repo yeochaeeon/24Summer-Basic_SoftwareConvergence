@@ -75,7 +75,7 @@ input[type="text"] {
 #sec3 > h2 {
   text-align: center;
   justify-content: center;
-  margin-top: 20px;
+  /* margin-top: px; */
 }
 #sec2 > button {
   /* justify-content: center; */
