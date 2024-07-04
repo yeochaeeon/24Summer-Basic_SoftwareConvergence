@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     name.style.display = "inline";
     input.style.display = "none";
     btok.style.display = "none";
-    result.style.display = "flex";
+    result.style.display = "none";
 
     let n = Math.floor(Math.random() * 4);
     img.setAttribute("src", `img/${n + 1}.png`);
@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (input.value == nname) {
       correct = correct + 1;
       // 7번.재입력 방지.
+      input.value = "";
+    } else {
       input.value = "";
     }
     console.log(total);

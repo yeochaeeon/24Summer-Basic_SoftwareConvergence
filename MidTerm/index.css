@@ -50,6 +50,10 @@ input[type="text"] {
   width: 70%;
 }
 
+button {
+  background-color: aliceblue;
+}
+
 #inSec > button {
   width: 25%;
   padding: 8px;
@@ -77,6 +81,7 @@ input[type="text"] {
   justify-content: center;
   /* margin-top: px; */
 }
+
 #sec2 > button {
   /* justify-content: center; */
   margin: 8px;
@@ -86,4 +91,11 @@ input[type="text"] {
   border: none;
   border-radius: 5px;
   font-weight: bold;
+}
+#inSec > button:hover {
+  background-color: lightgray;
+  border: 2px solid rgb(252, 235, 246);
+}
+#sec2 > button:hover {
+  background-color: lightgrey;
 }
