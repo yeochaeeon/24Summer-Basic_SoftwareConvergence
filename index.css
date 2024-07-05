@@ -19,7 +19,7 @@ header > h1 {
   padding: 13px;
 }
 article {
-  width: 80%;
+  width: 60%;
   padding: 15px;
   margin: 30px;
   border: 1px dotted lightgray;
@@ -49,6 +49,10 @@ ul > li {
 ul > li:hover {
   border-radius: 7px;
   background-color: white;
+}
+a {
+  text-decoration: none;
+  font-weight: bolder;
 }
 a:hover {
   display: inline-block;
