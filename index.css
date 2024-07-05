@@ -47,7 +47,7 @@ ul > li {
   /* background-color: whitesmoke; */
 }
 ul > li:hover {
-  border-radius: 7px;
+  border-radius: 10px;
   background-color: white;
 }
 a {
