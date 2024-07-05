@@ -93,8 +93,8 @@ button {
   font-weight: bold;
 }
 #inSec > button:hover {
-  background-color: lightgray;
-  border: 2px solid rgb(252, 235, 246);
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(241, 206, 237);
 }
 #sec2 > button:hover {
   background-color: lightgrey;
