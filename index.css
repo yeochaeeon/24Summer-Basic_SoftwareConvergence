@@ -74,6 +74,12 @@ a:hover {
   transform: scale(1.13);
 }
 @media screen and (max-width: 550px) {
+  header > h1 {
+    font-size: x-large;
+  }
+  header > a {
+    font-size: smaller;
+  }
   article {
     width: 80%; /* 60% -> 80% */
     padding: 15px;
